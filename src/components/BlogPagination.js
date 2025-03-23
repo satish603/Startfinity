@@ -29,10 +29,10 @@ const BlogPagination = () => {
             padding: '50px 0', margin: '0', fontSize: '46px', textTransform: 'uppercase', textAlign: 'center', fontFamily: 'fangsong',
           }}
         >
-          Blogovi
+          Recent Blogs
         </h1>
         <AttentionSeeker effect="shakeX" triggerOnce delay={300}>
-          {currentItems === null || currentItems === 'undefined' || currentItems.length === 0 ? <p className="author-blog-alert-cont"><span>Autor trenutno nema objavljenih blogova.</span></p>
+          {currentItems === null || currentItems === 'undefined' || currentItems.length === 0 ? <p className="author-blog-alert-cont"><span>No Blog published yet </span></p>
             : (
               <div className="blog-grid">
                 {currentItems && currentItems.map((item) => (
