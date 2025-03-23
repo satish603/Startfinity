@@ -19,7 +19,7 @@ export default function LocationPage() {
           <div className="loc-img" />
           <div className="loc-iframe">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11507.858785507102!2d18.4090856!3d43.8565604!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ca13d716acd6937!2sAdvokat%20Senad%20Ra%C5%A1inli%C4%87!5e0!3m2!1sen!2sba!4v1671481102590!5m2!1sen!2sba"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.242706039029!2d72.60034557963974!3d23.051561925402087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e841a8fb6688b%3A0x74c28945e5a91979!2sCivil%20Hospital%2C%20Ahmedabad!5e0!3m2!1sen!2sin!4v1742738071779!5m2!1sen!2sin"
               title="Startfinity Navigator Private Limited Location"
               width="100%"
               height="100%"
