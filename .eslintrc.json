@@ -26,7 +26,8 @@
     "no-shadow": "off",
     "import/no-extraneous-dependencies": "off",
     "max-len": "off",
-    "react/jsx-quotes": "off"
+    "react/jsx-quotes": "off",
+    "quotes": "off"
   },
   "ignorePatterns": [
     "dist/",
