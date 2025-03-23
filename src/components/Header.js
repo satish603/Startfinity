@@ -150,7 +150,7 @@ export default function Header() {
               to="/pravne-oblasti#lista-oblasti"
               className={({ isActive }) => (isActive ? "active desktop-li" : "inactive desktop-li")}
             >
-              AREAS
+              SERVICES
             </NavLink>
           </li>
           <li style={{ "--animation-order": 5 }}>
