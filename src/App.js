@@ -1,12 +1,5 @@
-import {
-  React,
-  useEffect,
-} from 'react';
-import {
-  Routes,
-  Route,
-  useLocation,
-} from 'react-router-dom';
+import { React, useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -29,13 +22,12 @@ import BlogPagination from './components/BlogPagination';
 
 export default function App() {
   const { pathname, hash, key } = useLocation();
-  const URL = 'https://advokat-rasinlic.com/api/verify-user-auth';
 
   useEffect(() => {
-    // if not a hash link, scroll to top
+    // If not a hash link, scroll to top; otherwise scroll to id
     if (hash === '') {
       window.scrollTo(0, 0);
-    } else { // else scroll to id
+    } else {
       setTimeout(() => {
         const id = hash.replace('#', '');
         const element = document.getElementById(id);
@@ -44,18 +36,9 @@ export default function App() {
         }
       }, 0);
     }
-  }, [pathname, hash, key]); // do this on route change
+  }, [pathname, hash, key]);
 
-  useEffect(() => {
-    fetch(URL, {
-      headers: {
-        'x-access-token': localStorage.getItem('token'),
-      },
-    }).then((res) => res.json())
-      .then((resp) => {
-        localStorage.setItem('token', resp.token);
-      });
-  }, [URL]);
+  // Removed token verification logic
 
   return (
     <>
